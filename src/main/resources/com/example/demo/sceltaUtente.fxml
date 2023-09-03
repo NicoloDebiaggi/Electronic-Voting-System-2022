@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.userChoiceController">
+   <center>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="121.0" layoutY="92.0" text="CHE TIPO DI UTENTE SEI?" textFill="#263f73">
+               <font>
+                  <Font name="Verdana Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button fx:id="elButton" layoutX="121.0" layoutY="160.0" mnemonicParsing="false" onAction="#elButtonOnAction" prefHeight="56.0" prefWidth="280.0" style="-fx-background-color: #263f73;" text="UTENTE ELETTORE" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="adButton" layoutX="120.0" layoutY="235.0" mnemonicParsing="false" onAction="#adButtonOnAction" prefHeight="56.0" prefWidth="280.0" style="-fx-background-color: #263f73;" text="UTENTE AMMINISTRATORE" textFill="WHITE">
+               <font>
+                  <Font name="Verdana Bold" size="12.0" />
+               </font>
+            </Button>
+            <Label layoutX="206.0" layoutY="368.0" text="Barazzotto-Debiaggi">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+            </Label>
+            <Text layoutX="122.0" layoutY="364.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Progetto di Igegneria del software, anno 2021/2022" wrappingWidth="275.54058837890625">
+               <font>
+                  <Font name="Calibri Light" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

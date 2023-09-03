@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="blankButton" layoutX="389.0" layoutY="289.0" minWidth="45.0" mnemonicParsing="false" onAction="#blankAction" prefHeight="18.0" prefWidth="107.0" style="-fx-background-color: #841f03;" text="SCHEDA BIANCA" textFill="WHITE" />
+      <Button fx:id="blankButton1" layoutX="191.0" layoutY="333.0" minWidth="45.0" mnemonicParsing="false" onAction="#blankAction" prefHeight="30.0" prefWidth="137.0" style="-fx-background-color: #263f73;" text="CONFERMA VOTO" textFill="WHITE" />
+      <Text fill="#263f73" layoutX="167.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VOTO ORDINALE" wrappingWidth="185.97531127929688">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <Text fill="#263f73" layoutX="78.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Riordina i candidati in base alle tue preferenze oppure seleziona &quot;SCHEDA BIANCA&quot;">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <VBox layoutX="57.0" layoutY="92.0" prefHeight="186.0" prefWidth="438.0" />
+   </children>
+</AnchorPane>
