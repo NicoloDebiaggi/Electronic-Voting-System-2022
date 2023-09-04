@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.resCatPrefController">
+   <children>
+      <ImageView fitHeight="491.0" fitWidth="509.0" layoutX="18.0" layoutY="-2.0" opacity="0.14" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_Università_degli_Studi_di_Milano.svg.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="72.0" layoutY="211.0" prefHeight="12.0" prefWidth="403.0" />
+      <Text layoutX="114.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Voti totali:" />
+      <Label fx:id="totLabel" layoutX="178.0" layoutY="228.0" prefHeight="18.0" prefWidth="73.0" />
+      <Text layoutX="256.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="di cui schede bianche:" />
+      <Label fx:id="blankLabel" layoutX="379.0" layoutY="227.0" prefHeight="18.0" prefWidth="73.0" />
+      <Separator layoutX="92.0" layoutY="252.0" prefHeight="12.0" prefWidth="361.0" />
+      <VBox fx:id="vertVBox" layoutX="82.0" layoutY="99.0" prefHeight="112.0" prefWidth="102.0" />
+      <Text layoutX="172.0" layoutY="73.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ID VOTAZIONE:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Button fx:id="exitButton" layoutX="24.0" layoutY="331.0" mnemonicParsing="false" onAction="#exitButtonOnAction" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #841f03;" text="LOG OUT" textFill="WHITE" />
+      <Button fx:id="newButton" layoutX="23.0" layoutY="297.0" mnemonicParsing="false" onAction="#newButtonOnAction" prefHeight="26.0" prefWidth="136.0" style="-fx-background-color: #563F73;" text="ADMIN HUB" textFill="WHITE" />
+      <AnchorPane layoutY="370.0" prefHeight="30.0" prefWidth="526.0" style="-fx-background-color: #563f73;">
+         <children>
+            <Label layoutX="208.0" layoutY="7.0" prefHeight="9.0" prefWidth="110.0" text="Barazzotto-Debiaggi" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Text fill="#383838" layoutX="31.0" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="RISULTATI VOT. CAT. (PREF.)">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Text>
+      <Label fx:id="idLabel" layoutX="272.0" layoutY="60.0" prefHeight="18.0" prefWidth="125.0" textAlignment="RIGHT" />
+      <VBox fx:id="prefVBox" layoutX="187.0" layoutY="98.0" prefHeight="112.0" prefWidth="261.0" />
+      <Text layoutX="92.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PARTITI:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="283.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PREFERENZE:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Text layoutX="219.0" layoutY="294.0" strokeType="OUTSIDE" strokeWidth="0.0" text="VINCITORE:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="winnerLabel" layoutX="320.0" layoutY="281.0" prefHeight="18.0" prefWidth="186.0" textAlignment="RIGHT" />
+      <Text layoutX="217.0" layoutY="314.0" strokeType="OUTSIDE" strokeWidth="0.0" text="PREFERENZA:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Label fx:id="prefLabel" layoutX="318.0" layoutY="301.0" prefHeight="18.0" prefWidth="186.0" textAlignment="RIGHT" />
+   </children>
+</AnchorPane>

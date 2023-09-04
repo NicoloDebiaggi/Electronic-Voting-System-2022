@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.VotoCategoricoPrefSolo1Controller">
+   <children>
+      <Button fx:id="blankButton" layoutX="391.0" layoutY="324.0" minWidth="45.0" mnemonicParsing="false" onAction="#blankAction" prefHeight="26.0" prefWidth="107.0" style="-fx-background-color: #841f03;" text="SCHEDA BIANCA" textFill="WHITE" />
+      <Button fx:id="yesButton" layoutX="191.0" layoutY="322.0" minWidth="45.0" mnemonicParsing="false" onAction="#yesAction" prefHeight="30.0" prefWidth="137.0" style="-fx-background-color: #263f73;" text="VOTE" textFill="WHITE" />
+      <ChoiceBox fx:id="parChoiceBox" layoutX="176.0" layoutY="180.0" prefHeight="32.0" prefWidth="178.0" />
+      <ChoiceBox fx:id="pref1Box" layoutX="175.0" layoutY="247.0" prefHeight="32.0" prefWidth="178.0" />
+      <Text fill="#263f73" layoutX="19.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELEZIONA PARTITO:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <Text fill="#263f73" layoutX="19.0" layoutY="265.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SELEZIONA PREFERENZE:">
+         <font>
+            <Font name="Corbel" size="12.0" />
+         </font>
+      </Text>
+      <AnchorPane layoutY="371.0" prefHeight="29.0" prefWidth="520.0" style="-fx-background-color: #263f73;">
+         <children>
+            <Label layoutX="204.0" layoutY="5.0" prefHeight="9.0" prefWidth="110.0" text="Barazzotto-Debiaggi" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="141.0" fitWidth="138.0" layoutX="191.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_Università_degli_Studi_di_Milano.svg.png" />
+         </image>
+      </ImageView>
+      <Separator layoutX="164.0" layoutY="228.0" prefWidth="200.0" />
+      <Label fx:id="alertLabel" layoutX="146.0" layoutY="292.0" prefHeight="18.0" prefWidth="214.0" textFill="RED" />
+   </children>
+</AnchorPane>

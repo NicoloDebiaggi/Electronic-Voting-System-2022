@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.FinalLoginController">
+   <bottom>
+      <AnchorPane prefHeight="400.0" prefWidth="520.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="251.0" layoutY="371.0" text="Barazzotto-Debiaggi">
+               <font>
+                  <Font name="Calibri Light" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="158.0" layoutY="355.0" text="Progetto di ingegneria del software 2021/2022">
+               <font>
+                  <Font name="Verdana" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutY="153.0" prefHeight="38.0" prefWidth="600.0" text="Login effettuato con successo!" textFill="#12c91e">
+               <font>
+                  <Font name="Verdana Bold" size="23.0" />
+               </font>
+            </Label>
+            <Button fx:id="finalCancButton" layoutX="217.0" layoutY="272.0" mnemonicParsing="false" onAction="#finalCancButtonOnAction" prefHeight="26.0" prefWidth="162.0" style="-fx-background-color: #263f73;" text="Cancel" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>

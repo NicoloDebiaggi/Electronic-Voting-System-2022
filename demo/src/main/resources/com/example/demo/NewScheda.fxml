@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="520.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.NewElectionController">
+   <children>
+      <Text fill="#563f73" layoutX="68.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data inzio:" />
+      <Text fill="#563f73" layoutX="68.0" layoutY="211.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo di votazione:" />
+      <Text fill="#563f73" layoutX="69.0" layoutY="240.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Modalità di vittoria:" />
+      <Button fx:id="confirmButton" layoutX="309.0" layoutY="325.0" mnemonicParsing="false" onAction="#confirmButtonOnAction" prefHeight="30.0" prefWidth="154.0" style="-fx-background-color: #119F13;" text="CONFIRM" textFill="WHITE" />
+      <ChoiceBox fx:id="votoChoiceBox" layoutX="312.0" layoutY="194.0" prefWidth="150.0" />
+      <ChoiceBox fx:id="winChoiceBox" layoutX="312.0" layoutY="223.0" prefWidth="150.0" />
+      <TextField fx:id="dataTextField" layoutX="313.0" layoutY="164.0" promptText="                   dd/mm/yyyy" style="-fx-background-color: #ffffff0;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="155.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="backButton" layoutX="67.0" layoutY="326.0" mnemonicParsing="false" onAction="#backButtonOnAction" prefHeight="27.0" prefWidth="154.0" style="-fx-background-color: #841F03;" text="BACK" textFill="WHITE" />
+      <ImageView fitHeight="125.0" fitWidth="137.0" layoutX="203.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../../target/classes/com/example/demo/Logo_Università_degli_Studi_di_Milano.svg.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="-4.0" layoutY="370.0" prefHeight="30.0" prefWidth="526.0" style="-fx-background-color: #563f73;">
+         <children>
+            <Label layoutX="213.0" layoutY="6.0" prefHeight="9.0" prefWidth="110.0" text="Barazzotto-Debiaggi" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+      <Text fill="#383838" layoutX="142.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CREA UNA NUOVA ELEZIONE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <Label fx:id="alertLabel" layoutX="175.0" layoutY="226.0" prefHeight="18.0" prefWidth="133.0" textAlignment="RIGHT" textFill="#f40606" />
+      <Label fx:id="dataLabel" layoutX="130.0" layoutY="167.0" prefHeight="18.0" prefWidth="179.0" textAlignment="RIGHT" textFill="#f40606" />
+      <Text fill="#563f73" layoutX="68.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Domanda referendum:" />
+      <TextField fx:id="questTextField" layoutX="313.0" layoutY="283.0" promptText="Domanda Referendum" style="-fx-background-color: #ffffff0;" />
+      <Separator layoutX="69.0" layoutY="256.0" prefHeight="0.0" prefWidth="392.0" />
+      <Label fx:id="refLabel" layoutX="197.0" layoutY="271.0" prefHeight="18.0" prefWidth="110.0" textAlignment="RIGHT" textFill="#f40606" />
+      <CheckBox fx:id="twoPrefsCheckBox" layoutX="444.0" layoutY="262.0" mnemonicParsing="false" />
+      <Text fill="#563f73" layoutX="68.0" layoutY="275.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Comune con più di 15.000 abitanti:" />
+   </children>
+</AnchorPane>
