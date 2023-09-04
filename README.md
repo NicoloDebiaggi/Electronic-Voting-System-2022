@@ -1,4 +1,4 @@
-# Software-Engineering-Exam2022: Electronic-Voting-System
+# Software-Engineering-Exam: Electronic-Voting-System
 Collaborative project done with [Otoni24](https://github.com/Otoni24) where we focused on developing a software the implements an Electronic Voting System based on the italian laws. The project consist of both fron-end and back-end development in wich a database connection was required
 
 ## Objective
